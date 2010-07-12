@@ -86,7 +86,7 @@
 				d["effortDriven"] = (i % 5 == 0);
 			}
                         */
-                        $.getJSON('http://search.chanel.in.escapemg.com/data?callback=?', function(data,status) {
+                        $.getJSON('../data.json', function(data,status) {
                             var serverTime = (new Date()).getTime() - startTime;
                             var clientStartTime = (new Date()).getTime();
                             grid = new Slick.Grid($("#myGrid"), data, columns, options);
